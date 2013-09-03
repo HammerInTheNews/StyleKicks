@@ -1,4 +1,11 @@
 StyleKickers::Application.routes.draw do
+root to: 'feet#index'
+  resources :feet
+  resources :users
+  resources :shoes do
+    resources :ratings
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
