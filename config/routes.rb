@@ -1,4 +1,6 @@
 StyleKickers::Application.routes.draw do
+  devise_for :users
+
 root to: 'feet#index'
   resources :feet
   resources :users
