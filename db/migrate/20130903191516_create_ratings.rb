@@ -1,0 +1,11 @@
+class CreateRatings < ActiveRecord::Migration
+  def change
+    create_table :ratings do |t|
+      t.string :star
+      t.integer :user_id
+      t.integer :shoe_id
+
+      t.timestamps
+    end
+  end
+end
